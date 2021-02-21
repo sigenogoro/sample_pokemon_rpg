@@ -1,3 +1,5 @@
+
+//　開始や順番に行うのみ
 fun main() {
-    println("Hello World")
+    println("ポケモンバトルを行う")
 }
