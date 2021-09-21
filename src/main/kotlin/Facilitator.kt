@@ -1,7 +1,12 @@
-fun main(){
+import model.Pokemon
+
+fun main() {
     println("ーーーーーーーーーーーーー")
-    println("バトルスタート")
     println("あなたのポケモンを選んでください")
 //    pokemonをランダムで取得する
-    val havePokemon = arrayListOf<String>()
+    val player: Pokemon = Player().select()
+    val enemy: Pokemon = Enemy().select()
+
+    println("バトルスタート")
+
 }
