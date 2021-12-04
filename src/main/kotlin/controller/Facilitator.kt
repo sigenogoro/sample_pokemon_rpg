@@ -1,5 +1,7 @@
-import Enemy.Enemy
-import Player.Player
+package controller
+
+import enemy.Enemy
+import player.Player
 import model.Pokemon
 
 fun main() {
