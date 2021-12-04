@@ -1,3 +1,5 @@
+import Enemy.Enemy
+import Player.Player
 import model.Pokemon
 
 fun main() {

@@ -1,3 +1,5 @@
+package Player
+
 import model.Pokemon
 
 class Player {

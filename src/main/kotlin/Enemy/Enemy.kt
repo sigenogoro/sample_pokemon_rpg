@@ -1,3 +1,5 @@
+package Enemy
+
 import model.Pokemon
 
 //　敵クラス
