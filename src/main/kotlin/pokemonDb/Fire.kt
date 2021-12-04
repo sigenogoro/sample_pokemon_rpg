@@ -1,11 +1,10 @@
-package enemy
+package pokemonDb
 
 import model.Pokemon
 
-//　敵クラス
-class Enemy {
-    fun select(): Pokemon {
-        return Pokemon(
+class Fire {
+    private val firePokemon = listOf(
+        Pokemon(
             pokemonId = 1,
             hp = 100,
             type = "Fire",
@@ -19,7 +18,11 @@ class Enemy {
                 "strongerAttack" to 30,
                 "IncreaseDefense" to 10,
                 "IncreaseSpeed" to 10
-            ),
+            )
         )
+    )
+
+    fun get(selectId: Int): Pokemon {
+        return firePokemon[0]
     }
 }

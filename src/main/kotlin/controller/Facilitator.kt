@@ -1,15 +1,15 @@
 package controller
 
+import FactoryInstance
 import enemy.Enemy
 import player.Player
-import model.Pokemon
 
 fun main() {
+    val userFactory = FactoryInstance()
+    val player = userFactory.create("player")
     println("ーーーーーーーーーーーーー")
     println("あなたのポケモンを選んでください")
-//    pokemonをランダムで取得する
-    val player: Pokemon = Player().select()
-    val enemy: Pokemon = Enemy().select()
+
 
     println("バトルスタート")
 

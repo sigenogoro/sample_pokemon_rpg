@@ -3,10 +3,10 @@ package player
 import model.Pokemon
 import pokemonDb.Fire
 
-class Player(
+class PlayerImp(
     val firePokemon: Fire
-) {
-    fun getSelect(selectId: Int): Pokemon {
+) : Player {
+    override fun getSelect(selectId: Int): Pokemon {
         return firePokemon.get(selectId)
     }
 }
