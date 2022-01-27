@@ -2,9 +2,9 @@ package pokemonDb
 
 import model.Pokemon
 
-class Fire {
-    private val firePokemon = listOf(
-        Pokemon(
+class Fire() {
+    fun firePokemon(): Pokemon {
+        return Pokemon(
             pokemonId = 1,
             hp = 100,
             type = "Fire",
@@ -20,9 +20,5 @@ class Fire {
                 "IncreaseSpeed" to 10
             )
         )
-    )
-
-    fun get(selectId: Int): Pokemon {
-        return firePokemon[0]
     }
 }

@@ -10,7 +10,5 @@ fun main() {
     println("ーーーーーーーーーーーーー")
     println("あなたのポケモンを選んでください")
 
-
-    println("バトルスタート")
-
+    println(player.getPokemon())
 }
