@@ -1,9 +1,10 @@
 package enemy
 
+import model.Human
 import model.Pokemon
 
 //　敵クラス
-class Enemy {
+class Enemy() : Human {
     fun select(): Pokemon {
         return Pokemon(
             pokemonId = 1,
