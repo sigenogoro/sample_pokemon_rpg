@@ -1,15 +1,14 @@
 package controller
 
 import FactoryInstance
-import enemy.Enemy
-import player.Player
 
 fun main() {
     val userFactory = FactoryInstance()
-    val player = userFactory.create("player")
-    val enemy = userFactory.create("Enemy")
+    val player = userFactory.createPlyer("player")
+    val enemy = userFactory.createEnemy("Enemy")
     println("ーーーーーーーーーーーーー")
     println("あなたのポケモンを選んでください")
 
-    println(player)
+    println(player.getPokemon())
+    println(enemy)
 }
