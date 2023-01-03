@@ -1,13 +1,13 @@
 package study.generics
 
-class Box2<T>(
-    val value: T
-)
+// ジェネリクス関数
+fun <T> create(str: T): T {
+    return str
+}
 
 fun main() {
-    val boxInt = Box2(value = 1234)
-    val boxString = Box2("アイウエオ")
-
-    println(boxInt.value)
-    println(boxString.value)
+    val p1 = create(100)
+    val p2 = create("文字列")
+    println(p1)
+    println(p2)
 }
